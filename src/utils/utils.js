@@ -26,7 +26,7 @@ export default class Utils {
                 }
                 if (el.classList) {
                     el.classList.add(e);
-                } else if (!hasClass(el, e)) {
+                } else if (!this.hasClass(el, e)) {
                     el.className += " " + e;
                 }
             });
